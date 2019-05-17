@@ -6,7 +6,7 @@
 
 ### Crear un proyecto nuevo
 
-ng new NombreProyecto
+ng new admin                    // Si el proyecto se llama admin
 
 ### Consideraciones
 
@@ -15,4 +15,21 @@ ng new NombreProyecto
 
 ### Instalar Bootstrap una vez inicializado el proyecto con angular-cli
 
-npm install bootstrap jquery popper
+npm install bootstrap jquery popper.js
+
+
+## Estructura de la aplicación
+Toma app como componente base
+
+admin
+-- node_modules
+-- src
+-- -- components
+-- -- app.component.html        // HTML base
+-- -- app.component.ts          // Controlador del componente base
+-- -- app.component.sass        // Estilos base
+-- -- app.component.spec.ts     // Testing
+-- -- app-routing.module.ts     // Maneja el ruteo de la aplicación
+-- -- app.module.ts             // Centraliza la carga de modulos para que puedan ser usados en la app
+
+
